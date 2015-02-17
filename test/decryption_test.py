@@ -22,7 +22,7 @@ def test_decrypt_takes_a_string_and_offset_as_arguments():
 def test_decrypt_raises_ValueError_if_called_with_empty_string():
     with assert_raises(ValueError) as e:
         decrypt('', offset)
-    assert_equal(e.exception.message, 'can not encrypt empty string')
+    assert_equal(e.exception.message, 'can not decrypt empty string')
 
 
 # Detta test kan kommenteras bort om man inte vill testa 'Undantagshantering' på C eller A-nivå
